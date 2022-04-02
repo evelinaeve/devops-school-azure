@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "ansible"
+    },
+    "adminPassword": {
+	 "reference": {
+        "keyVault": {
+          "id": "/subscriptions/722a40e1-75d5-4594-b8ec-15148afb9653/resourceGroups/RG-Davletshina/providers/Microsoft.KeyVault/vaults/keyvaultdavletsh"
+        },
+        "secretName": "ansible"
+      }
+    },
+    "dnsLabelPrefix": {
+      "value": "win2019servdeploy"
+    },
+    "publicIpName": {
+      "value": "pip-WS2019-hm1"
+    },
+    "publicIPAllocationMethod": {
+      "value": "Dynamic"
+    },
+    "publicIpSku": {
+      "value": "Basic"
+    },
+    "OSVersion": {
+      "value": "2019-datacenter-gensecond"
+    },
+    "vmSize": {
+      "value": "Standard_D2s_v3"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "vmName": {
+      "value": "vmWS2019"
+    },
+ }
+}
