@@ -1,0 +1,15 @@
+1) Deploy a resource group.
+2) Deploy a new virtual machine, using ARM template:
+
+Use the resource group above
+
+Operating system: Windows any
+
+Location, VM size, Storage – to your discretion
+
+Password must be stored in Azure KeyVault (please deploy it first)
+3) Deploy IIS to the VM above, using Custom script extension (you should
+create an azure storage account for that first)
+For this work to be reviewed, please share an access for
+epmcouse@outlook.com:
+Azure portal - Subscriptions – [] – Access control (IAM) – Add role assignment:
