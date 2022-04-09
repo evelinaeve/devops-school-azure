@@ -1,0 +1,8 @@
+1) Create a Recovery Services vault.
+2) Configure a backup of VM, created at 1st day with automatic backup each
+Saturday at 00:00 GMT.
+3) Create Azure File Share.
+4) Connect new File Share as drive X: to VM, created at 1st day, using
+Custom script extension.
+5) Create new role with modify permissions, assign it to resource group with
+VM and add account epmcourse@outlook.com to it.
